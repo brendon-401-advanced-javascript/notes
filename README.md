@@ -1,7 +1,7 @@
 # notes
 notesy labs
 
-# LAB - Class xx
+# LAB - Class 01
 
 ## Project: Notesy
 
@@ -9,8 +9,8 @@ notesy labs
 
 ### Links and Resources
 
-- [submission PR](https://github.com/brendon-401-advanced-javascript/notes/pull/1)
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [submission PR](https://github.com/brendon-401-advanced-javascript/notes/pull/2)
+- [ci/cd](https://github.com/brendon-401-advanced-javascript/notes/actions) (GitHub Actions)
 - [back-end server url](http://xyz.com) (when applicable)
 - [front-end application](http://xyz.com) (when applicable)
 
@@ -29,7 +29,7 @@ i.e.
 
 --TO RUN THE APPLICATION--
 - In the Terminal run 
-    - **node notes.js --add 'any note you want to save'** then press enter.
+    - **node index.js --add 'any note you want to save'** then press enter.
 
 #### How to use your library (where applicable)
 

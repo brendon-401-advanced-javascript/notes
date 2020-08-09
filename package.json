@@ -2,7 +2,7 @@
   "name": "notes",
   "version": "0.0.1",
   "description": "Notesy package for 401",
-  "main": "notes.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
