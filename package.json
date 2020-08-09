@@ -1,0 +1,35 @@
+{
+  "name": "notes",
+  "version": "0.0.1",
+  "description": "Notesy package for 401",
+  "main": "notes.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendon-401-advanced-javascript/notes.git"
+  },
+  "keywords": [
+    "notesy",
+    "notes",
+    "package",
+    "json",
+    "httpie"
+  ],
+  "author": "Brendon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brendon-401-advanced-javascript/notes/issues"
+  },
+  "homepage": "https://github.com/brendon-401-advanced-javascript/notes#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0"
+  }
+}
