@@ -31,5 +31,9 @@
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/parser": "^3.8.0",
     "eslint": "^7.6.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "minimist": "^1.2.5"
   }
 }
