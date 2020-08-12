@@ -1,24 +1,13 @@
 'use strict';
-// require dependancies
-const minimist = require('minimist');
+// require dependancies and connect files
+const input = require('./lib/input.js');
+const request = require('./lib/notes.js');
 
 // take input
-const arg = minimist(process.argv.slice(2));
+let command = input();
 
 // push output
-const output = runNote(arg);
-
-// give output
+const output = request(command);
 console.log(output);
+ 
 
-// command function
- function parseNote(obj) {
-     return {
-         note: obj.add || obj.newnote || obj.a,
-     }
- }
-
- function runNote(obj) {
-     const command = parseNote(obj);
-     return `Note: ${command.note}`;
- }
