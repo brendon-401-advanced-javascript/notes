@@ -18,14 +18,8 @@ notesy labs
 
 #### `.env` requirements (where applicable)
 
-i.e.
-
-- `PORT` - Port Number
-- `MONGODB_URI` - URL to the running mongo instance/db
 
 #### How to initialize/run your application (where applicable)
-
-- e.g. `npm start`
 
 --TO RUN THE APPLICATION--
 - In the Terminal run 
@@ -42,3 +36,5 @@ i.e.
 #### UML
 
 Link to an image of the UML for your application and response to events
+
+![UML](./assets/img/notes.png)
