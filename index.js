@@ -1,13 +1,16 @@
 'use strict';
 // require dependancies and connect files
-const input = require('./lib/input.js');
-const request = require('./lib/notes.js');
+const Input = require('./lib/input.js');
+// const request = require('./lib/notes.js');
+const Request = require('./lib/notes.js');
 
 // take input
-let command = input();
+let input = new Input();
+
+const request = new Request(input);
 
 // push output
-const output = request(command);
+const output = request.go();
 console.log(output);
  
 
