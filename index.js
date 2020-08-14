@@ -1,7 +1,6 @@
 'use strict';
 // require dependancies and connect files
 const Input = require('./lib/input.js');
-// const request = require('./lib/notes.js');
 const Request = require('./lib/notes.js');
 
 // take input
@@ -13,4 +12,3 @@ const request = new Request(input);
 const output = request.go();
 console.log(output);
  
-
