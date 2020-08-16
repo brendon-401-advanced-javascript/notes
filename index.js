@@ -3,7 +3,7 @@
 const Input = require('./lib/input.js');
 const Request = require('./lib/notes.js');
 const mongoose = require('mongoose');
-const notesDB = require('./lib/model/notes-schema.js');
+const Entry = require('./lib/model/notes-schema.js');
 
 // // connect to mongo
 const MONGODB_URI = 'mongodb://localhost:27017/notesey';
@@ -17,13 +17,46 @@ mongoose.connect(MONGODB_URI, {
 
 // take input
 let input = new Input();
-
 const request = new Request(input);
 
 // push output
-console.log(input.command);
-const outputAdd = request;
 
-console.log(outputAdd);
+const outputAdd = request.add();
+const outputList = request.list();
+
+
+// handle the newNotes with Database
+let newNotes = {
+    name: request.name,
+    note: request.note,
+    category: request.category
+}
+// console.log(request.note);
+
+async function handleTheNotes() {
+
+    let note = new Entry(newNotes);
+    let addedNote = await note.save();
+    console.log('added', addedNote);
+
+    let allNotes = await Entry.find({});
+    console.log('all notes', allNotes);
+}
+
+handleTheNotes();
+
+// save new note into database
+// let note = new Entry(newNotes);
+// note.save()
+//     .then(newNote => {
+//         console.log(newNote);
+//     })
+
+// let allNotes = Entry.find({})
+//     .then(notes => {
+//         console.log(notes);
+//     })
+
+
 
 
