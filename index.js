@@ -11,19 +11,13 @@ mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
-// insert record
 
-// query the DB
+
+
 
 // take input
 let input = new Input();
 const request = new Request(input);
-
-// push output
-
-const outputAdd = request.add();
-const outputList = request.list();
-
 
 // handle the newNotes with Database
 let newNotes = {
@@ -33,29 +27,32 @@ let newNotes = {
 }
 // console.log(request.note);
 
-async function handleTheNotes() {
-
+async function addANote() {
+    try {
     let note = new Entry(newNotes);
     let addedNote = await note.save();
-    console.log('added', addedNote);
+    console.log(`Note added: ${request.add()} `);
+    console.log(`${addedNote}`)
 
-    let allNotes = await Entry.find({});
-    console.log('all notes', allNotes);
+   
+    } catch(e) {
+        console.error(e);
+    }
 }
 
-handleTheNotes();
+async function listNotes() {
+    try {
+    let allNotes = await Entry.find({});
+    console.log('all notes', allNotes);
+    } catch(e) {
+        console.error(e);
+    }
+}
 
-// save new note into database
-// let note = new Entry(newNotes);
-// note.save()
-//     .then(newNote => {
-//         console.log(newNote);
-//     })
+// addANote();
 
-// let allNotes = Entry.find({})
-//     .then(notes => {
-//         console.log(notes);
-//     })
+listNotes();
+
 
 
 

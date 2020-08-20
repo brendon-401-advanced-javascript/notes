@@ -70,9 +70,12 @@ Link to an image of the UML for your application and response to events
 
 --TO RUN THE APPLICATION--
 - In the Terminal run 
-    - **node index.js --add 'any note you want to save'** then press enter.
+    - **node index.js --add --name 'the name of the note --note 'any note you want to save' --category 'school, work, home, misc'** then press enter.
 
 #### How to use your library (where applicable)
+
+    - use the library whenever you need to save notes. 
+    - best used for schoolwork or work when added to a project. 
 
 #### Tests
 
