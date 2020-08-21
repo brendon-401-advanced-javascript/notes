@@ -126,6 +126,7 @@ Link to an image of the UML for your application and response to events
 - Any tests of note?
 - Describe any tests that you did not complete, skipped, etc
     - **Still woking on tests, I got my DB setup but I still need to pass stuff into it**
+    - **tests will be implemented as soon as I get the rest of the functionality working properly**
 
 #### UML
 

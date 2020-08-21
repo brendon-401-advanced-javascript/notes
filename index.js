@@ -14,6 +14,7 @@ const Request = require('./lib/notes.js');
 let input = new Input();
 const request = new Request(input);
 request.execute();
+console.log(typeof(input));
 
 // handle the newNotes with Database
 
